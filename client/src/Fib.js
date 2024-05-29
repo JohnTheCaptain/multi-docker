@@ -27,6 +27,7 @@ class Fib extends Component {
 
   handleSubmit = async (event) => {
     event.preventDefault();
+    console.log("SUBMIT ", this.state.index)
 
     await axios.post('/api/values', {
       index: this.state.index,
